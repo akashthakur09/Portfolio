@@ -3,7 +3,7 @@ import Card from './card';
 
 const MyServices = () => {
   return (
-    <div className='myServices'>
+    <div className='myServices' id="myServices">
         <div className='upperService'><h1>My Services</h1></div>
         <div className='lowerService'>
             <Card title="Frontend Development" content="As a frontend developer with expertise in React and other leading libraries, I excel in creating stunning user interfaces that elevate websites to their fullest potential."/>

@@ -128,6 +128,12 @@ import "../App.css";
 
 const SkillSection = () => {
   const skills = [
+    
+    {
+      name: "C++",
+      level: 95,
+      tag:"Expert",
+    },
     {
       name: "HTML",
       level: 90,
@@ -149,26 +155,32 @@ const SkillSection = () => {
       tag:"Intermediate",
     },
     {
+      name: "Redux",
+      level: 80,
+      tag:"Intermediate",
+    },
+    {
       name: "NodeJs",
-      level: 60,
+      level: 70,
       tag:"Intermediate",
     },
     {
       name: "Python",
       level: 90,
-      tag:"beginner",
+      tag:"expert",
+    },
+    {
+      name: "SQL",
+      level: 60,
+      tag:"Intermediate",
     },
     {
       name: "Java",
       level: 50,
       tag:"beginner",
     },
-    {
-      name: "C++",
-      level: 95,
-      tag:"Expert",
-    },
-    // Add other skills with their respective percentages
+    
+    
   ];
 
   return (

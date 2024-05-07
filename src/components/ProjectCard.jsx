@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react";
 
 const ProjectCard = (props) => {
   return (
     <div className="project-card">
-      <img src={props.imgUrl} alt={props.alt || 'Image'} />
+      <img src={props.imgUrl} alt={props.alt || "Image"} />
       <div className="project-card-content">
         <h1>{props.title}</h1>
         <p>{props.tech}</p>
+        <div style={{ display: "flex", justifyContent:"space-between",marginTop:"10px"}}>
+          <a href={props.githubLink} style={{ marginRight: "10px",color:"blue",textDecoration:"none"}}>
+            GitHub Source Code
+          </a>
+          <a href={props.liveLink} style={{color:"blue",textDecoration:"none"}}>Live Demo</a>
+        </div>
       </div>
     </div>
   );

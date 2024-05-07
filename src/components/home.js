@@ -1,38 +1,64 @@
 import React from "react";
-import '../App.css'
-import Image from '../Assets/3d-portrait-people.jpg'
-// import Header from "./header";
+import "../App.css";
+import { IoMdMail } from "react-icons/io";
+import HomeIcons from './homeicons';
 
-const Home=()=>{
-    return(
-        <>
-        <div className="homeSection">
-            
-            <div className="home-left-div">
-                <h1>Welcome to My<br></br>Design Portfolio</h1>
-                <p>I'am Akash Thakur a Full stack Developer and Programmer. </p>
-                <button className="home-btn" style={{ fontFamily: '"Dosis", sans-serif' }}>let's Work Together</button>
-            </div>
-            
-            <div className="home-right-div">
-                <img src={Image} alt=""></img>
-            </div>
+
+const Home = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  return (
+    <>
+      <div className="homeSection" id="home">
+        <div className="home-left-div">
+          <h1>
+            I'm Akash Thakur
+          </h1>
+          <h4>Software Developer & Programmer</h4>
+          <p>Building digital experiences that matter.</p>
+          <button
+            className="home-btn"
+            style={{ fontFamily: '"Dosis", sans-serif' }}
+            onClick={() => scrollToSection("contact")}
+          >
+            let's Work Together
+          </button>
         </div>
 
-        <div className="res-homeSection">
+        <div className="home-right-div">
+          {/* <img src={Image} alt=""></img> */}
+          <div className="social-icons">
+          <HomeIcons/>
+          </div>
+          <h2 style={{marginBottom:"10px",fontSize:"20px"}}>Check out my GitHub Account</h2>
+          <button className="github-home-btn" onClick={() => window.open("https://github.com/akashthakur09")}>
             
-            <div className="res-home-left-div">
-                <h1>Welcome to My<br></br>Design Portfolio</h1>
-                <p>I'am Akash Thakur a Full stack Developer and Programmer. </p>
-                <button className="res-home-btn" style={{ fontFamily: '"Dosis", sans-serif' }}>let's Work Together</button>
-            </div>
-            
+            <span>My GitHub</span>
+          </button>
         </div>
-        <svg className="homeBorder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="" fill-opacity="1" d="M0,0L80,21.3C160,43,320,85,480,96C640,107,800,85,960,106.7C1120,128,1280,192,1360,224L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-        </svg>
-        </>
-    );
-}
+      </div>
+
+      <div className="res-homeSection">
+        <div className="res-home-left-div">
+        <h1>
+            I'm Akash Thakur
+          </h1>
+          <h4>Software Developer & Programmer</h4>
+          <p>Building digital experiences that matter.</p>
+          <button
+            className="res-home-btn"
+            style={{ fontFamily: '"Dosis", sans-serif' }}
+            onClick={() => scrollToSection("contact")}
+          >
+            let's Work Together
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Home;
