@@ -3,12 +3,14 @@ import ProjectCard from './ProjectCard'; // Import the ProjectCard component
 import roomease from '../Assets/roomease.jpg'
 import domconnect from '../Assets/Dom.png'
 import freshfeast from '../Assets/freshfeast.jpeg'
+import propertease from '../Assets/PropertEase.png'
 
 const Projects = () => {
   const cardsData = [
-    { id: 1, title: 'RoomEase-Room Rental Web App', tech: 'MERN Stack | JWT', imgUrl: roomease , githubLink:'https://github.com/akashthakur09/RoomEase---website-for-room-service.git',liveLink:'https://roomease-website-for-room-service.onrender.com/'},
+    { id: 1, title: 'RoomEase-Room Rental Web App', tech: 'MERN Stack | JWT', imgUrl: roomease , githubLink:'https://github.com/akashthakur09/RoomEase-Online-Rooms-on-Rent',liveLink:'https://roomease-online-rooms-on-rent.onrender.com'},
     { id: 2, title: 'DomConnect-A Social Media Web App', tech: 'MERN Stack | Reedux | JWT', imgUrl: domconnect ,githubLink:'https://github.com/akashthakur09/DomConnect--Social-Media-Platform.git',liveLink:'https://domconnect-social-media-platform.onrender.com/'},
-    { id: 3, title: 'FreshCart-Grocery Web App', tech: 'MERN Stack | Redux | JWT', imgUrl: freshfeast ,githubLink:'https://github.com/akashthakur09/FreashFeast--Online-Grocery-Website-.git',liveLink:'https://github.com/akashthakur09/FreashFeast--Online-Grocery-Website-.git'},
+    { id: 3, title: 'PropertEase-Renting and finding properties online', tech: 'MERN Stack | JWT', imgUrl: propertease ,githubLink:'https://github.com/akashthakur09/PropertEase-Online-Platform-for-renting-properties.git',liveLink:'https://propertease-online-platform-for-renting.onrender.com'},
+    { id: 4, title: 'FreshCart-Grocery Web App', tech: 'MERN Stack | Redux | JWT', imgUrl: freshfeast ,githubLink:'https://github.com/akashthakur09/FreashFeast--Online-Grocery-Website-.git',liveLink:'https://github.com/akashthakur09/FreashFeast--Online-Grocery-Website-.git'},
     
   ];
 
