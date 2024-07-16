@@ -29,7 +29,6 @@ const Home = () => {
         </div>
 
         <div className="home-right-div">
-          {/* <img src={Image} alt=""></img> */}
           <div className="social-icons">
           <HomeIcons/>
           </div>

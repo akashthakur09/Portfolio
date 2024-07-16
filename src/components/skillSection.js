@@ -1,128 +1,3 @@
-// import React from 'react'
-
-// function SkillSection() {
-//   return (
-//     <div className="skillSection">
-//       Skill Section
-//     </div>
-//   )
-// }
-
-// export default SkillSection;
-// import React, { useState } from "react";
-// import "../App.css";
-
-// const SkillSection = () => {
-//   const [showSkills, setShowSkills] = useState(false);
-
-//   const toggleSkills = () => {
-//     setShowSkills(!showSkills);
-//   };
-
-//   const skills = [
-//     {
-//       name: "HTML",
-//       level: "Expert",
-//     },
-//     {
-//       name: "CSS",
-//       level: "Expert",
-//     },
-//     {
-//       name: "JavaScript",
-//       level: "Expert",
-//     },
-//     {
-//       name: "React",
-//       level: "Expert",
-//     },
-//     {
-//       name: "Python",
-//       level: "Intermediate",
-//     },
-//     {
-//       name: "Java",
-//       level: "Beginner",
-//     },
-//   ];
-
-//   return (
-//     <div className="skills-container">
-//       {/* <h1>My Skills</h1> */}
-//       <button onClick={toggleSkills}>
-//         {showSkills ? "My Skills" : "My Skills"}
-//       </button>
-//       {showSkills && (
-//         <ul className="skills-list">
-//           {skills.map((skill) => (
-//             <li key={skill.name} className="skill">
-//               <div className="skill-name">{skill.name}</div>
-//               <div className="skill-level">{skill.level}</div>
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default SkillSection;
-// import React from "react";
-// import "../App.css";
-
-// const SkillSection = () => {
-//   const skills = [
-    // {
-    //   name: "HTML",
-    //   level: "Expert",
-    // },
-    // {
-    //   name: "CSS",
-    //   level: "Expert",
-    // },
-    // {
-    //   name: "JavaScript",
-    //   level: "Expert",
-    // },
-    // {
-    //   name: "ReactJs",
-    //   level: "Expert",
-    // },
-    // {
-    //   name: "NodeJs",
-    //   level: "Expert",
-    // },
-    // {
-    //   name: "Python",
-    //   level: "Intermediate",
-    // },
-    // {
-    //   name: "Java",
-    //   level: "Beginner",
-    // },
-    // {
-    //   name: "C++",
-    //   level: "Expert",
-    // },
-//   ];
-
-//   return (
-//     <div className="skills-container">
-//       {/* <h1>My Skills</h1> */}
-//       <ul className="skills-list">
-//         {skills.map((skill) => (
-//           <li key={skill.name} className="skill">
-//             <div className="skill-name">{skill.name}</div>
-//             <div className="skill-level">{skill.level}</div>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default SkillSection;
-
 import React from "react";
 import "../App.css";
 
@@ -131,8 +6,33 @@ const SkillSection = () => {
     
     {
       name: "C++",
-      level: 95,
+      level: 85,
       tag:"Expert",
+    },
+    {
+      name: "JavaScript",
+      level: 80,
+      tag:"expert",
+    },
+    {
+      name: "ReactJs",
+      level: 90,
+      tag:"expert",
+    },
+    {
+      name: "NodeJs",
+      level: 85,
+      tag:"expert",
+    },
+    {
+      name: "ExpressJs",
+      level: 80,
+      tag:"expert",
+    },
+    {
+      name: "MongoDB",
+      level: 70,
+      tag:"expert",
     },
     {
       name: "HTML",
@@ -145,29 +45,19 @@ const SkillSection = () => {
       tag:"expert",
     },
     {
-      name: "JavaScript",
+      name: "Redux",
       level: 80,
       tag:"expert",
     },
     {
-      name: "ReactJs",
-      level: 70,
-      tag:"Intermediate",
-    },
-    {
-      name: "Redux",
+      name: "RESTful APIs",
       level: 80,
-      tag:"Intermediate",
-    },
-    {
-      name: "NodeJs",
-      level: 70,
-      tag:"Intermediate",
+      tag:"expert",
     },
     {
       name: "Python",
-      level: 90,
-      tag:"expert",
+      level: 70,
+      tag:"Intermediate",
     },
     {
       name: "SQL",
@@ -175,7 +65,17 @@ const SkillSection = () => {
       tag:"Intermediate",
     },
     {
-      name: "Java",
+      name: "MySQL",
+      level: 70,
+      tag:"Intermediate",
+    },
+    {
+      name: "Google Firebase",
+      level: 50,
+      tag:"beginner",
+    },
+    {
+      name: "Decker",
       level: 50,
       tag:"beginner",
     },
