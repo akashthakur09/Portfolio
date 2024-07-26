@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Great+Vibes&display=swap');
-:root {
+/* :root {
   --first: #101213;
   --second: #1a1c1f;
   --third: #ffc300;
   
   --fourth:#1e96fc;
   
+} */
+ :root {
+  --first: #091a36;
+  --second: #071f47;
+  --third: #ffc300;
+  
+  --fourth:#f5f7f9;
+  
 }
-
 
 *{
   padding: 0px;
   margin: 0px;
-  /* background-color: #041e55; */
   font-size: 16px;
-  color: #fafbfc;;
-  /* background-color:rgb(93, 9, 9); */
+  color: var(--fourth);
   box-sizing: border-box;
 }
 .App {
@@ -45,16 +50,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #fafbfc;;
+  color: var(--fourth);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-
-
-
 
 
 /* ###################################################################################################################
@@ -73,32 +70,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 5px;
-  background-color: var(--first);
-
+  background-color: var(--second);
+ 
 }
 .nav-list{
   display: flex;
   flex-direction: row;
   width: auto;
-  /* border: 1px solid red; */
 }
 .nav-li {
   list-style: none;
-  /* padding: 0px 20px; */
   background: none;
-  /* border: 1px solid red; */
   font-size: 1em;
   
   
 }
 
-/* .nav-li > Link{
-  color: #ffd60a;
-} */
-
 .navBtn {
   position: relative;
-  /* padding: 10px 0px; */
   margin-right: 20px;
   width: 150px;
   height: 40px;
@@ -107,7 +96,6 @@
   align-items: center;
   border-radius: 2px;
   border: none;
-  /* background-color: #041e55; */
   background-color: var(--third);
   
   overflow: hidden;
@@ -121,8 +109,6 @@
 
 .navBtn .button__text {
   transform: translateX(22px);
-  color: #fff;
-  /* color: #03144c; */
   font-weight: 600;
 }
 
@@ -131,8 +117,6 @@
   transform: translateX(109px);
   height: 100%;
   width: 30px;
-  /* color: #03144c; */
-  /* background-color: #041e55; */
 
   display: flex;
   align-items: center;
@@ -190,7 +174,7 @@
 
 .nav-li a {
   display: block;
-  color: white;
+  /* color: white; */
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -248,7 +232,7 @@
 }
 .logoLink{
   font-size: 1.2em;
-  color: var(--third);
+  color: var(--fourth);
   
 }
 @media screen and (min-width: 790px) and (max-width: 900px) {
@@ -404,7 +388,7 @@
   background-color: var(--first);
   padding: 10px;
   display: flex;
-  color: white;
+  /* color: white; */
   
   /* z-index: 9; */
 }
@@ -447,7 +431,7 @@
 }
 
 .github-home-btn{
-  color: #000;
+  /* color: #000; */
   border: 1px solid black;
   padding: 5px 50px;
   background-color: var(--second);
@@ -461,13 +445,13 @@
 
 .home-left-div > h1{
   font-size: 3em;
-  color: white;
+  /* color: white; */
   
 }
 .home-left-div > p{
   margin-top: 70px;
   /* font-size: 20px; */
-  color: white;
+  /* color: white; */
  
 }
 .home-left-div > h4{
@@ -494,7 +478,7 @@
 
 .home-btn {
   border: none;
-  color: white;
+  /* color: white; */
   background-image: linear-gradient(30deg, --fourth, --fourth);
   border-radius: 2px;
   background-size: 100% auto;
@@ -557,7 +541,7 @@
   }
   .res-home-left-div > h1{
     font-size: 80px;
-    color: white;
+    /* color: white; */
   }
   .res-home-left-div > p{
     margin-top: 10px;
@@ -604,7 +588,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     /* background-color: var(--first); */
     background-color: var(--third);
     
@@ -626,12 +610,12 @@
   .res-home-left-div > h1{
     font-size: 4em;
     text-align: center;
-    color: white;
+    /* color: white; */
   }
   .res-home-left-div > h4{
     font-size: 2em;
     text-align: center;
-    color: white;
+    /* color: white; */
   }
   .res-home-left-div > p{
     margin-top: 10px;
@@ -674,7 +658,7 @@
   margin-top: -4px;
   /* background-color: #041e55; */
   background-color: var(--second);
-  color: white;
+  /* color: white; */
   /* border: 2px solid red; */
   height: 750px;
   width: 100%;
@@ -690,7 +674,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  color: white;
+  /* color: white; */
 }
 .leftAbout >.imageBox{
   background-color: #001d3d;
@@ -744,13 +728,13 @@
   /* border: 2px solid rgb(0, 255, 21); */
   height: 70%;
 }
-.upperRight > p{
+/* .upperRight > p{
   color: white;
 }
 .upperHeading{
   color: white;
-  /* margin: 20px; */
-}
+ 
+} */
 
 
 
@@ -777,9 +761,9 @@
   font-weight: bold;
   
 }
-.aboutHeader > ul >li> a{
+/* .aboutHeader > ul >li> a{
   color: #e8eaf2;
-}
+} */
 .content{
   display: flex;
   /* display: inline; */
@@ -787,7 +771,7 @@
   justify-content: center;
   align-items: center;
   /* height: fit-content; */
-  color: #000;
+  /* color: #000; */
   background-color: #001d3d;
   
   width: 100%;
@@ -801,9 +785,9 @@
 box-shadow: inset 13px 13px 26px var(--second),
             inset -13px -13px 26px var(--second); */
 }
-.experianceSection{
+/* .experianceSection{
   color: #03144c;
-}
+} */
 
 /* SKills csss  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
@@ -897,7 +881,7 @@ box-shadow: inset 13px 13px 26px var(--second),
   #aboutSection{
     
     background-color: var(--second);
-    color: white;
+    /* color: white; */
     height: 900px;
     width: 100%;
     display: flex;
@@ -931,7 +915,7 @@ box-shadow: inset 13px 13px 26px var(--second),
   #aboutSection{
     /* margin-top: -100; */
     background-color: var(--second);
-    color: white;
+    /* color: white; */
     height: 800px;
     width: 100%;
     display: flex;
@@ -1038,7 +1022,7 @@ box-shadow: inset 13px 13px 26px var(--second),
 
 .upperService>h1{
   text-align: center;
-  color: #f8f9fa;
+  /* color: #f8f9fa; */
   margin-bottom: 40px;
   padding-top: 40px;
   font-size: 4em;
@@ -1149,7 +1133,7 @@ box-shadow: inset 13px 13px 26px var(--second),
 }
 .myWorkHeading>h1{
   /* display: block; */
-  color: white;
+  /* color: white; */
   text-align: center;
   /* border-bottom: 2px solid var(--third); */
   font-size: 4em;
@@ -1173,7 +1157,7 @@ box-shadow: inset 13px 13px 26px var(--second),
 .project-cards-container {
   display: flex;
   /* border-radius: 6px; */
-  color: #333;
+  /* color: #333; */
   background: var(--first);
   padding: 1rem;
   box-shadow: 0 0 1rem #000 inset;
@@ -1385,7 +1369,7 @@ box-shadow: inset 13px 13px 26px var(--second),
     /* margin: 5px 0px; */
     padding: 5px 10px;
     border-radius: 2px;
-    color: #000;
+    /* color: #000; */
     border: none;
   }
   textarea{
@@ -1395,7 +1379,7 @@ box-shadow: inset 13px 13px 26px var(--second),
     padding: 10px 5px;
     border-radius: 5px;
     border: none;
-    color: #080808;
+    /* color: #080808; */
   }
   
     input[type="text"],
@@ -1412,7 +1396,7 @@ box-shadow: inset 13px 13px 26px var(--second),
       font-size: 1em;
       /* background: linear-gradient(to bottom,#52796f 0%,#52796f 100%); */
       background-color: var(--third);
-      color: #041e55;
+      /* color: #041e55; */
       padding: .2em 1em;
       display: flex;
       align-items: center;
@@ -1495,7 +1479,7 @@ box-shadow: inset 13px 13px 26px var(--second),
   /* text-align: center; */
   margin: 10px 0px;
   font-size: 3em;
-  color: white;
+  /* color: white; */
 }
 .rightLower{
   /* border: 2px solid black; */
@@ -1520,17 +1504,16 @@ textarea{
   padding: 10px 5px;
   border-radius: 5px;
   border: none;
-  color: #6f7071;
+  
 }
 
-/* input, */
 
   input[type="text"],
   input[type="email"],
   textarea {
     border: none;
     outline: none;
-    border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
+    border-bottom: 1px solid #ccc; 
   }
 
 
@@ -1538,9 +1521,7 @@ textarea{
   
   font-family: inherit;
   font-size: 1.3em;
-  /* background: linear-gradient(to bottom,#52796f 0%,#52796f 100%); */
   background-color: var(--third);
-  color: #041e55;
   padding: .5em 2em;
   display: flex;
   align-items: center;
@@ -1602,30 +1583,7 @@ textarea{
 
 .submitBtn:hover .formBtn {
   transform: rotate(45deg);
-  /* background-color: white; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ###################################################################################################################
