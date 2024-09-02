@@ -10,13 +10,13 @@ const AboutHeader =()=>{
         <div className="aboutHeader">
             <ul>
                 <li>
-                    <Link to="/skills" style={{textDecoration:'none'}}>Skills</Link>
+                    <Link to="/about/skills" style={{textDecoration:'none'}}>Skills</Link>
                 </li>
                 <li>
-                    <Link to="/education" style={{textDecoration:'none'}}>Education</Link>
+                    <Link to="/about/education" style={{textDecoration:'none'}}>Education</Link>
                 </li>
                 <li>
-                    <Link to="/experience" style={{textDecoration:'none'}}>Experience</Link>
+                    <Link to="/about/experience" style={{textDecoration:'none'}}>Experience</Link>
                 </li>
             </ul>
         </div>

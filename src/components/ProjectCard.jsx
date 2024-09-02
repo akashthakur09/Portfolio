@@ -8,10 +8,10 @@ const ProjectCard = (props) => {
         <h1>{props.title}</h1>
         <p>{props.tech}</p>
         <div style={{ display: "flex", justifyContent:"space-between",marginTop:"10px"}}>
-          <a href={props.githubLink} style={{ marginRight: "10px",color:"blue",textDecoration:"none"}}>
-            GitHub Source Code
+          <a className="projectLinks" href={props.githubLink} style={{ marginRight: "10px",color:"blue",textDecoration:"none"}}>
+            Source Code
           </a>
-          <a href={props.liveLink} style={{color:"blue",textDecoration:"none"}}>Live Demo</a>
+          <a className="projectLinks" href={props.liveLink} style={{color:"blue",textDecoration:"none"}}>Live Demo</a>
         </div>
       </div>
     </div>
