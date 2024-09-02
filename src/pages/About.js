@@ -30,7 +30,7 @@ function About() {
             </div>
             <div className="lg:relative lg:-mt-8 lg:flex lg:justify-center ProfilePhoto">
               <img
-                className="lg:w-36 lg:h-36 lg:rounded-full lg:border-4 lg:border-[#ffdd00] lg:shadow-md"
+                className="lg:w-36 lg:h-36 lg:rounded-full lg:border-4 lg:border-[#ab51e3] lg:shadow-md"
                 src={profileImg}
                 alt="Profile"
               />

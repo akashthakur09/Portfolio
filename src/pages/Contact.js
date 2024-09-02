@@ -44,7 +44,7 @@ function Contact() {
             </div>
             <div className="lg:relative lg:-mt-8 lg:flex lg:justify-center ProfilePhoto">
               <img
-                className="lg:w-36 lg:h-36 lg:rounded-full lg:border-4 lg:border-[#ffdd00] lg:shadow-md"
+                className="lg:w-36 lg:h-36 lg:rounded-full lg:border-4 lg:border-[#7bdff2] lg:shadow-md"
                 src={profileImg}
                 alt="Profile"
               />
@@ -126,8 +126,8 @@ function Contact() {
             className="lg:absolute lg:inset-0 lg:bg-cover lg:bg-center"
             style={{
               backgroundImage: `url(${Img})`,
-              backgroundRepeat: "no-repeat", // Prevent background from repeating
-              backgroundSize: "cover", // Ensure the image covers the entire section
+              backgroundRepeat: "no-repeat", 
+              backgroundSize: "cover", 
             }}
           >
             <div className="lg:absolute lg:inset-0 lg:bg-gradient-to-r lg:from-gray-950 lg:via-gray-950 lg:to-gray-950 lg:opacity-80"></div>
